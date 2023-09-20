@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-nlzn
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/ci10t-777-0012-tenant/ci10t-777-0012-app/devfile-sample-nlzn@sha256:5832d1916972bd127d32f144a06bb3c0c3cfdc75b691f2838333b4a78535d635
+        name: my-nodejs
+        resources: {}
+status: {}
